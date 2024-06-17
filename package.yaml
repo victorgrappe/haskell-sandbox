@@ -50,9 +50,19 @@ executables:
     - haskell-sandbox
 
 tests:
-  haskell-sandbox-test:
+  haskell-sandbox-test-unit:
     main:                Spec.hs
-    source-dirs:         test
+    source-dirs:         test/unit
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell-sandbox
+
+  haskell-sandbox-test-integ:
+    main:                Spec.hs
+    source-dirs:         test/integ
     ghc-options:
     - -threaded
     - -rtsopts

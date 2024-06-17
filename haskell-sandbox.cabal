@@ -56,7 +56,7 @@ executable haskell-sandbox-exe
     , hspec ==2.11.7
   default-language: Haskell2010
 
-test-suite haskell-sandbox-test
+test-suite haskell-sandbox-test-integ
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
@@ -64,7 +64,24 @@ test-suite haskell-sandbox-test
   autogen-modules:
       Paths_haskell_sandbox
   hs-source-dirs:
-      test
+      test/integ
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck ==2.14.3
+    , base >=4.7 && <5
+    , haskell-sandbox
+    , hspec ==2.11.7
+  default-language: Haskell2010
+
+test-suite haskell-sandbox-test-unit
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_haskell_sandbox
+  autogen-modules:
+      Paths_haskell_sandbox
+  hs-source-dirs:
+      test/unit
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       QuickCheck ==2.14.3

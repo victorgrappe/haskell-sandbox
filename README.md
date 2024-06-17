@@ -2,8 +2,18 @@
 
 ```bash
 stack build
+stack build --test
 stack run
 stack ghci
 
-clear; stack build; stack run
+
+stack test
+stack test haskell-sandbox:haskell-sandbox-test-unit
+stack test haskell-sandbox:haskell-sandbox-test-integ
+
+
+stack build --test
+stack build --test; stack run
+
+
 ```
