@@ -1,4 +1,4 @@
-module Main (main) where
+module First (main) where
 
 import Lib
 import Types
@@ -9,7 +9,7 @@ main = do
   print (f x y)
   putStrLn "That was cool"
   print hello
-  putStrLn "That was so cool"
+  putStrLn "That was so cooooooooooool "
   print victor
 
 -- main = someFunc

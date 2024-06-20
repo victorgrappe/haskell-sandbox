@@ -4,14 +4,18 @@
 -- https://hspec.github.io/
 
 import Control.Exception (evaluate)
+import Lib
 import Test.Hspec
 import Test.QuickCheck
+
+-- import Types
 
 main :: IO ()
 main = hspec $ do
   describe "Prelude.head" $ do
     it "returns the first element of a list" $ do
       head [23 ..] `shouldBe` (23 :: Int)
+      f x y `shouldBe` 20
 
     it "returns the first element of an *arbitrary* list" $
       property $
