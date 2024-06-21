@@ -1,4 +1,4 @@
-module Types (hello, Name, Latitude, Longitude, Altitude, Coordinates, Person, victor) where
+module Yoman (hello, Name, Latitude, Longitude, Altitude, Coordinates, Person, victor) where
 
 hello :: Int
 hello = 345

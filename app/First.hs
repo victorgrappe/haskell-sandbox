@@ -1,7 +1,7 @@
 module First (main) where
 
 import Lib
-import Types
+import Yoman
 
 main :: IO ()
 main = do

@@ -1,8 +1,3 @@
--- main :: IO ()
--- main = putStrLn "Test suite not yet implemented"
-
--- https://hspec.github.io/
-
 import Control.Exception (evaluate)
 import Lib
 import Test.Hspec

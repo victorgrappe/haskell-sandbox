@@ -26,7 +26,7 @@ source-repository head
 library
   exposed-modules:
       Lib
-      Types
+      Yoman
   other-modules:
       Paths_haskell_sandbox
   autogen-modules:

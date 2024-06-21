@@ -1,8 +1,3 @@
--- main :: IO ()
--- main = putStrLn "Test suite not yet implemented"
-
--- https://hspec.github.io/
-
 import Control.Exception (evaluate)
 import Test.Hspec
 import Test.QuickCheck
@@ -19,3 +14,8 @@ main = hspec $ do
 
     it "throws an exception if used with an empty list" $ do
       evaluate (head []) `shouldThrow` anyException
+
+-- main :: IO ()
+-- main = putStrLn "Test suite not yet implemented"
+
+-- https://hspec.github.io/
