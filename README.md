@@ -11,13 +11,11 @@ stack test
 stack test haskell-sandbox:haskell-sandbox-test-unit
 stack test haskell-sandbox:haskell-sandbox-test-integ
 
+clear; stack build
+clear; stack build --test
+clear; stack build :haskell-sandbox-fir
+clear; stack build :haskell-sandbox-sec
 
-stack build --test
-stack build --test; stack run
-
-stack build :haskell-sandbox-fir
-stack build :haskell-sandbox-sec
-
-stack run haskell-sandbox-fir
-stack run haskell-sandbox-sec
+clear; stack run haskell-sandbox-fir
+clear; stack run haskell-sandbox-sec
 ```

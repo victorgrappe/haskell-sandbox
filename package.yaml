@@ -84,3 +84,13 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - haskell-sandbox
+
+  haskell-sandbox-test-cis192:
+    main:                Spec.hs
+    source-dirs:         test/cis192/02
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell-sandbox
