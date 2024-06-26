@@ -1,4 +1,4 @@
-module AlgebraicDataTypes (Thing, shoe, listO'Things, isSmall, isSmall2) where
+module Cis192.W02.AlgebraicDataTypes (Thing, shoe, sealingWax, listO'Things, isSmall, isSmall2, yo) where
 
 data Thing
   = Shoe
@@ -11,8 +11,14 @@ data Thing
 shoe :: Thing
 shoe = Shoe
 
+sealingWax :: Thing
+sealingWax = SealingWax
+
 listO'Things :: [Thing]
 listO'Things = [Shoe, SealingWax, King, Cabbage, King]
+
+yo :: [Integer]
+yo = [1, 2, 3, 4]
 
 isSmall :: Thing -> Bool
 isSmall Shoe = True
