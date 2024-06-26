@@ -87,11 +87,12 @@ test-suite haskell-sandbox-test-cis192
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      W02.AlgebraicDataTypesSpec
       Paths_haskell_sandbox
   autogen-modules:
       Paths_haskell_sandbox
   hs-source-dirs:
-      test/cis192/02
+      test/Cis192
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       QuickCheck ==2.14.3

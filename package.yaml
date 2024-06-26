@@ -99,7 +99,7 @@ tests:
 
   haskell-sandbox-test-cis192:
     main:                Spec.hs
-    source-dirs:         test/cis192/02
+    source-dirs:         test/Cis192
     ghc-options:
     - -threaded
     - -rtsopts
