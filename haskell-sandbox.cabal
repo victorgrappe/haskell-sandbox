@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      Cis192.W01.Introduction
       Cis192.W02.AlgebraicDataTypes
       Lib
       Yoman
@@ -87,6 +88,7 @@ test-suite haskell-sandbox-test-cis192
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      W01.IntroductionSpec
       W02.AlgebraicDataTypesSpec
       Paths_haskell_sandbox
   autogen-modules:
