@@ -1,12 +1,12 @@
 module W02.AlgebraicDataTypesSpec (spec) where
 
-import Cis192.W02.AlgebraicDataTypes
+import CIS194.W02.AlgebraicDataTypes
 import Test.Hspec
 
 spec :: Spec
 spec = do
   describe "AlgebraicDataTypes" $ do
-    it "Test CIS 192 - Week 02" $ do
+    it "CIS194.W02" $ do
       isSmall shoe `shouldBe` True
       isSmall2 shoe `shouldBe` True
       yo !! 0 `shouldBe` (1 :: Integer)

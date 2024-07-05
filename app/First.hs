@@ -1,6 +1,6 @@
 module First (main) where
 
-import Cis192.W02.AlgebraicDataTypes
+import CIS194.W02.AlgebraicDataTypes
 import Lib
 import Yoman
 

@@ -1,4 +1,4 @@
-module Cis192.W02.AlgebraicDataTypes (Thing, shoe, sealingWax, listO'Things, isSmall, isSmall2, yo) where
+module CIS194.W02.AlgebraicDataTypes (Thing, shoe, sealingWax, listO'Things, isSmall, isSmall2, yo) where
 
 data Thing
   = Shoe
