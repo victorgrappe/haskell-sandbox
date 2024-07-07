@@ -56,6 +56,28 @@ spec = do
       ((5 > 3) && ('p' <= 'q')) `shouldBe` True
       ("Haskell" > "C++") `shouldBe` True
 
+    it "CIS194.W01.Pair" $ do
+      fst p `shouldBe` 3
+      snd p `shouldBe` 'x'
+
+      sumPair (1, 2) `shouldBe` 3
+
+    it "CIS194.W01.List" $ do
+      (head nums) `shouldBe` 0
+      (tail nums) `shouldBe` [1, 2, 3]
+      (init nums) `shouldBe` [0, 1, 2]
+      (last nums) `shouldBe` 3
+
+      (length range) `shouldBe` 100
+      (length range2) `shouldBe` 50
+
+      hello1 `shouldBe` hello2
+
+      (1 : []) `shouldBe` [1]
+      (3 : (1 : [])) `shouldBe` [3, 1]
+      (2 : 3 : 4 : []) `shouldBe` [2, 3, 4]
+      (2 : 3 : 4 : []) == [2, 3, 4] `shouldBe` True
+
     it "CIS194.W01.Function" $ do
       sumtorial 0 `shouldBe` (0)
       sumtorial 3 `shouldBe` (3 + 2 + 1 + 0)
@@ -73,11 +95,9 @@ spec = do
       isEven 2 `shouldBe` True
       isEven 3 `shouldBe` False
 
-    it "CIS194.W01.Pair" $ do
-      fst p `shouldBe` 3
-      snd p `shouldBe` 'x'
+      f 3 17 8 `shouldBe` 28
 
-      sumPair (1, 2) `shouldBe` 3
+      intListLength [0, 1, 2] `shouldBe` 3
 
     it "CIS194.W01._" $ do
       print "Ho"

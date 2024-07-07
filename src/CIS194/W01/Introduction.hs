@@ -46,6 +46,25 @@ c3 = 'ダ'
 s :: String
 s = "Hello, Haskell!"
 
+-- Pair
+p :: (Int, Char)
+p = (3, 'x')
+
+sumPair :: (Int, Int) -> Int
+sumPair (x, y) = x + y
+
+-- List
+nums, range, range2 :: [Integer]
+nums = [0, 1, 2, 3]
+range = [1 .. 100]
+range2 = [2, 4 .. 100]
+
+hello1 :: [Char]
+hello1 = ['H', 'e', 'l', 'l', 'o']
+
+hello2 :: String
+hello2 = "Hello"
+
 -- Function
 sumtorial :: Integer -> Integer
 sumtorial 0 = 0
@@ -71,9 +90,9 @@ isEven n
   | n `mod` 2 == 0 = True
   | otherwise = False
 
--- Pair
-p :: (Int, Char)
-p = (3, 'x')
+f :: Int -> Int -> Int -> Int
+f x y z = x + y + z
 
-sumPair :: (Int, Int) -> Int
-sumPair (x, y) = x + y
+intListLength :: [Integer] -> Integer
+intListLength [] = 0
+intListLength (_ : xs) = 1 + intListLength xs
