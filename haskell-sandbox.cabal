@@ -42,14 +42,20 @@ library
     , hspec ==2.11.7
   default-language: Haskell2010
 
+executable haskell-sandbox-CIS194
+  main-is: Cis194.hs
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -main-is Cis194
+  build-depends:
+      QuickCheck ==2.14.3
+    , base >=4.7 && <5
+    , haskell-sandbox
+    , hspec ==2.11.7
+  default-language: Haskell2010
+
 executable haskell-sandbox-fir
   main-is: First.hs
-  other-modules:
-      Inspect
-      Second
-      Paths_haskell_sandbox
-  autogen-modules:
-      Paths_haskell_sandbox
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -main-is First
