@@ -46,19 +46,34 @@ c3 = 'ダ'
 s :: String
 s = "Hello, Haskell!"
 
--- Arithmetic
-ex01 = 3 + 2
+-- Function
+sumtorial :: Integer -> Integer
+sumtorial 0 = 0
+sumtorial n = n + (sumtorial (n - 1))
 
-ex02 = 19 - 27
+hailstone :: Integer -> Integer
+hailstone n
+  | n `mod` 2 == 0 = 0 `div` 2
+  | otherwise = 3 * n + 1
 
-ex03 = 2.35 * 8.6
+foo :: Integer -> Integer
+foo 0 = 16
+foo 1
+  | "Haskell" > "C++" = 3
+  | otherwise = 4
+foo n
+  | n < 0 = 0
+  | n `mod` 17 == 2 = -43
+  | otherwise = n + 3
 
-ex04 = 8.7 / 3.1
+isEven :: Integer -> Bool
+isEven n
+  | n `mod` 2 == 0 = True
+  | otherwise = False
 
-ex05 = mod 19 3
+-- Pair
+p :: (Int, Char)
+p = (3, 'x')
 
-ex06 = 19 `mod` 3
-
-ex07 = 7 ^ 222
-
-ex08 = (-3) * (-7)
+sumPair :: (Int, Int) -> Int
+sumPair (x, y) = x + y
