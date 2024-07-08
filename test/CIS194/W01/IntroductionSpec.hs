@@ -68,6 +68,10 @@ spec = do
       (init nums) `shouldBe` [0, 1, 2]
       (last nums) `shouldBe` 3
 
+      (nums !! 0) `shouldBe` 0
+      (nums !! 1) `shouldBe` 1
+      (nums !! 3) `shouldBe` 3
+
       (length range) `shouldBe` 100
       (length range2) `shouldBe` 50
 
