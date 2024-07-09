@@ -7,4 +7,4 @@ main :: IO ()
 main = do
   putStrLn "Welcome into CIS 194 haskell course"
   print s
-  print (yo !! 1)
+  print shoe
