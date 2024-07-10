@@ -1,6 +1,6 @@
 module Inspect (main) where
 
-import CIS194.W02.AlgebraicDataTypes
+import CIS194.W02_AlgebraicDataTypes
 import Lib
 import Yoman
 

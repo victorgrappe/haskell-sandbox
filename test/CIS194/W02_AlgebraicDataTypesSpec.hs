@@ -1,6 +1,6 @@
-module W02.AlgebraicDataTypesSpec (spec) where
+module W02_AlgebraicDataTypesSpec (spec) where
 
-import CIS194.W02.AlgebraicDataTypes
+import CIS194.W02_AlgebraicDataTypes
 import Test.Hspec
 
 spec :: Spec

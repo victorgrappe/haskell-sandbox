@@ -1,6 +1,6 @@
-module W01.IntroductionSpec (spec) where
+module W01_IntroductionSpec (spec) where
 
-import CIS194.W01.Introduction
+import CIS194.W01_Introduction
 import Test.Hspec
 
 spec :: Spec

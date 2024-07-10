@@ -1,7 +1,7 @@
-module Cis194 (main) where
+module CIS194 (main) where
 
-import CIS194.W01.Introduction
-import CIS194.W02.AlgebraicDataTypes
+import CIS194.W01_Introduction
+import CIS194.W02_AlgebraicDataTypes
 
 main :: IO ()
 main = do

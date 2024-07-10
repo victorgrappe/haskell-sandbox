@@ -1,4 +1,4 @@
-module CIS194.W01.Introduction where
+module CIS194.W01_Introduction where
 
 -- "Int" is guaranteed by the Haskell language standard to accommodate values at least up to max size depending on the architecture (2^32, 2^64)
 x :: Int
@@ -96,5 +96,3 @@ f x y z = x + y + z
 intListLength :: [Integer] -> Integer
 intListLength [] = 0
 intListLength (_ : xs) = 1 + intListLength xs
-
-

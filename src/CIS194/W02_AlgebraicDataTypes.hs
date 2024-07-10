@@ -1,4 +1,4 @@
-module CIS194.W02.AlgebraicDataTypes where
+module CIS194.W02_AlgebraicDataTypes where
 
 -- Enum
 data Thing
