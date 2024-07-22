@@ -27,6 +27,7 @@ library
   exposed-modules:
       CIS194.W01_Introduction
       CIS194.W02_AlgebraicDataTypes
+      CIS194.W03_RecPatternPolymorphism
       Lib
       Yoman
   other-modules:
@@ -96,6 +97,7 @@ test-suite haskell-sandbox-test-CIS194
   other-modules:
       W01_IntroductionSpec
       W02_AlgebraicDataTypesSpec
+      W03_RecPatternPolymorphismSpec
       Paths_haskell_sandbox
   autogen-modules:
       Paths_haskell_sandbox
