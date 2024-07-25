@@ -31,14 +31,13 @@ stack ghci haskell-sandbox:exe:haskell-sandbox-fir
 ## Test
 
 ```bash
+sudo launchctl config user path "/usr/bin:/bin:/usr/sbin:/sbin:/Users/${USER}/.local/bin/"
+
 clear; stack test
 clear; stack test :haskell-sandbox-test-unit
 clear; stack test :haskell-sandbox-test-integ
 clear; stack test :haskell-sandbox-test-CIS194
-clear; stack test :haskell-sandbox-test-CIS194 --test-arguments '--match "CIS194.W01"'
-clear; stack test :haskell-sandbox-test-CIS194 --test-arguments '--match "CIS194.W02"'
-clear; stack test :haskell-sandbox-test-CIS194 --test-arguments '--match "CIS194.W03"'
-clear; stack test :haskell-sandbox-test-CIS194 --test-arguments '--match "CIS194.W04"'
+clear; stack test :haskell-sandbox-test-CIS194 --test-arguments '--match "CIS194.WNN"'
 ```
 
 ## Build

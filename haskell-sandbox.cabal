@@ -30,6 +30,8 @@ library
       CIS194.W03_RecPatternPolymorphism
       CIS194.W04_HigherOrder
       CIS194.W05_TypeClass
+      CIS194.W06_Laziness
+      CIS194.WNN_Name
       Lib
       Yoman
   other-modules:
@@ -102,6 +104,8 @@ test-suite haskell-sandbox-test-CIS194
       W03_RecPatternPolymorphismSpec
       W04_HigherOrderSpec
       W05_TypeClassSpec
+      W06_LazinessSpec
+      WNN_NameSpec
       Paths_haskell_sandbox
   autogen-modules:
       Paths_haskell_sandbox
