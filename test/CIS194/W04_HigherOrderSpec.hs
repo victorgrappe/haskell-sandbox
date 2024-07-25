@@ -5,7 +5,7 @@ import Test.Hspec
 
 spec :: Spec
 spec = do
-  describe "RecPatternPolymorphism" $ do
+  describe "HigherOrder" $ do
     it "CIS194.W04.AnonymousFunctions" $ do
       (gt100 90) `shouldBe` False
       (gt100 134) `shouldBe` True
