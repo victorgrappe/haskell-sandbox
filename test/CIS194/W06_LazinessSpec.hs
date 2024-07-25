@@ -7,4 +7,5 @@ spec :: Spec
 spec = do
   describe "TypeClass" $ do
     it "CIS194.W06.StrictEvaluation" $ do
+      (take 3 (repeat 7)) `shouldBe` [7, 7, 7]
       print "Yoooooo"
