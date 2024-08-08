@@ -19,11 +19,13 @@ ani1 = Animal "Jamon" 7 30 :: Life
 
 ani2 = Animal {name = "Oki", weight = 10, speed = 22} :: Life
 
+ani3 = ani2 {name = "Rex"} :: Life
+
 veg1 = Vegetal "Olivier" 3 :: Life
 
 veg2 = Vegetal {name = "Cactous", weight = 2} :: Life
 
-lives = [ani1, ani2, veg1, veg2] :: [Life]
+lives = [ani1, ani2, ani3, veg1, veg2] :: [Life]
 
 getLifeName :: Life -> String
 getLifeName = name
