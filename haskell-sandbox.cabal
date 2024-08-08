@@ -32,6 +32,7 @@ library
       CIS194.W05_TypeClass
       CIS194.W06_Laziness
       CIS194.W07_FoldsMonoids
+      CIS194.W08_IO
       CIS194.WNN_Name
       Lib
       Yoman
@@ -107,6 +108,7 @@ test-suite haskell-sandbox-test-CIS194
       W05_TypeClassSpec
       W06_LazinessSpec
       W07_FoldsMonoidsSpec
+      W08_IOSpec
       WNN_NameSpec
       Paths_haskell_sandbox
   autogen-modules:
